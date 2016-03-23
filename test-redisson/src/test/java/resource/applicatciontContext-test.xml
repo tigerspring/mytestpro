@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx" 
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<!-- 注解驱动注册 -->
+	<context:annotation-config/>
+	<!-- 扫描包 -->
+	<context:component-scan base-package="org.test.redisson"/>
+
+<!-- 	<bean id="singleServerConfig" name="singleServerConfig" class="org.redisson.SingleServerConfig"> -->
+<!-- 		<property name="address" value="192.168.80.131:6379"></property> -->
+<!-- 	</bean> -->
+	
+	<bean id="config" name="config" class="org.redisson.Config">
+<!-- 		<property name="singleServerConfig" ref="singleServerConfig"></property> -->
+	</bean>
+	
+<!-- 	<bean id="redisson" name="Redisson" class="org.redisson.Redisson" > -->
+<!-- 	</bean> -->
+
+  	
+	
+	
+
+</beans>
