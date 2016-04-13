@@ -15,7 +15,6 @@ public class RedissonConfig implements InitializingBean  {
 	private String password;
 	private int database = 0;
 	public void afterPropertiesSet() throws Exception {
-		// TODO Auto-generated method stub
 		config = new Config();
 		SingleServerConfig singleServerConfig = config.useSingleServer();
 		singleServerConfig.setAddress(hostName + ":" + port)
