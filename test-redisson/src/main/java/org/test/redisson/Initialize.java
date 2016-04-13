@@ -10,7 +10,6 @@ public class Initialize {
 	}
 	
 	public Initialize(String hostName, int port) {
-		// TODO Auto-generated method stub
 		this.hostName=hostName;
 		this.port=port;
 	}

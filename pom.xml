@@ -29,6 +29,13 @@
 	  <version>4.1.3.RELEASE</version>
 	</dependency>
 	
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-test</artifactId>
+		<version>4.1.3.RELEASE</version>
+		<scope>test</scope>
+	</dependency>
+	
   </dependencies>
   
   <modules>
@@ -36,5 +43,6 @@
     <module>test-redis</module>
     <module>test-springMVC</module>
     <module>test-redisson</module>
+    <module>test-observer</module>
   </modules>
 </project>

@@ -36,7 +36,6 @@ public class Temp {
 class MyThread implements Runnable{
 
 	public void run() {
-		// TODO Auto-generated method stub
 		Temp tmp = new Temp();
 		System.out.println(Thread.currentThread().getName()+"=========>count="+tmp.downCount());
 	}
